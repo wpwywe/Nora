@@ -14,7 +14,7 @@ const client = new Client({
 });
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const TARGET_CHANNEL_ID = '1388052385104138304';
+const TARGET_CHANNEL_ID = '1388039409231990844';
 
 const memoryFiles = [
   'nora_memory.json',
@@ -149,3 +149,4 @@ client.on('messageCreate', async (message) => {
 });
 
 client.login(process.env.DISCORD_TOKEN);
+"// trigger redeploy" 
